@@ -57,7 +57,7 @@ export default (dc, label, type, config) => {
       },
     },
     isComponent: (el) => {
-      if (el.getAttribute && el.getAttribute("data-gjs-type") == type) {
+      if (el.getAttribute && el.getAttribute("data-gjs-type") === type) {
         return { type };
       }
     },
